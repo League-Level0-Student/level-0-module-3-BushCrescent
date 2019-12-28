@@ -18,6 +18,14 @@ void drawFlower(int x, int y) {
      ellipse(0, 0, 50, 50);
 } 
 void drawBeeFace(int BeeFaceX, int BeeFaceY) {
+  for(int i=0; i<34; i++){
+  ellipse(10+(i*2),10+(i*2),50,50);
+  if(i % 2 == 0){
+  fill(0,0,0);
+  }else {
+  fill(0,50,50);
+  }
+  }
      noStroke();
      fill(0, 0, 0);
      stroke(1);
@@ -37,6 +45,7 @@ void drawBeeFace(int BeeFaceX, int BeeFaceY) {
       ellipse(BeeFaceX, BeeFaceY+10, 20, 10);// mouth
      fill(255, 251, 28);
      ellipse(BeeFaceX, BeeFaceY+5, 20, 6);
+     
 }
 
 void setup() {
